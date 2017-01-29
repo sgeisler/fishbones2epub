@@ -7,6 +7,7 @@ from lxml.html import tostring
 from ebooklib import epub
 import sys
 import os
+import operator
 
 FISHBONES_INDEX_URL = "http://www.fishbonescomic.com/novel/book02/"
 
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     index = fetch_index()
     print("found {} chapters".format(len(index)))
 
-    for progress, (chapter_title, chapter_url) in enumerate(index.items()):
+    for progress, (chapter_title, chapter_url) in enumerate(sorted(index.items(), key=operator.itemgetter(0))):
         print("fetching {} ... ({} of {})".format(chapter_title, progress + 1, len(index)))
         chapter_paragraphs = fetch_chapter_content(chapter_url)
         print("{} has {} paragraphs".format(chapter_title, len(chapter_paragraphs)))
