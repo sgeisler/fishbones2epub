@@ -17,12 +17,20 @@ optional arguments:
   --cover cover-image  cover image to use for the ebook
  ```
  
+## Requirements
+
+To install the dependencies just use `pip`:
+```
+$ pip install -r requirements.txt
+```
+To properly install `lxml` you need to have `libxml2-dev libxslt1-dev python-dev` installed.
+
 ## Example usage:
  
- ```
- $ ls
- cover.jpg fishbones2.py  README.md  requirements.txt
- $ ./fishbones2.py fishbones2.epub --cover cover.jpg 
+```
+$ ls
+cover.jpg fishbones2.py  README.md  requirements.txt
+$ ./fishbones2.py fishbones2.epub --cover cover.jpg 
 fetching index ...
 found 23 chapters
 fetching Chapter 01 ... (1 of 23)
@@ -33,5 +41,4 @@ fetching Chapter 03 ... (3 of 23)
 Chapter 03 has 113 paragraphs
 fetching Chapter 04 ... (4 of 23)
 ...
-
- ```
+```
