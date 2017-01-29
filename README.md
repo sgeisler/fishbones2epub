@@ -1,6 +1,6 @@
 # Fishbones II ebook exporter
 
-`fishbones2.py` fetches all available chapters of the [Fischbones novel](http://www.fishbonescomic.com/novel/about/) from Jisuk Cho's blog and builds an ebook (epub)
+`fishbones2.py` fetches all available chapters of the [Fischbones novel Book II](http://www.fishbonescomic.com/novel/about/) from Jisuk Cho's blog and builds an ebook (epub)
  out of these chapters. You might add a custom cover image.
  
  ```
