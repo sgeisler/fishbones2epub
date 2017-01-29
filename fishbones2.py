@@ -12,20 +12,9 @@ import operator
 FISHBONES_INDEX_URL = "http://www.fishbonescomic.com/novel/book02/"
 
 COVER_TEMPLATE = '''
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Cover</title>
-</head>
-<body>
   <div style="text-align: center; padding: 0pt; margin: 0pt;">
     <img src="{}" >
   </div>
-</body>
-</html>
 '''
 
 def fetch_index():
