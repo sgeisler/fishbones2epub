@@ -1,5 +1,4 @@
-Fishbones II ebook exporter
-===========================
+# Fishbones II ebook exporter
 
 `fishbones2.py` fetches all available chapters of the Fischbones novel from Jisuk Cho's blog and builds an ebook (epub)
  out of these chapters. You might add a custom cover image.
@@ -18,8 +17,7 @@ optional arguments:
   --cover cover-image  cover image to use for the ebook
  ```
  
- Example usage:
- --------------
+## Example usage:
  
  ```
  $ ls
